@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f8fb;
+    color: #222;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #003b73;
+    color: #fff;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    justify-content: space-between;
+    min-height: 80vh;
+    gap: 40px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #003b73;
+    margin-bottom: 20px;
+}
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 14px 28px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff9800;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
+
+.hero-image {
+    width: 50%;
+
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* media query for tablets */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    nav a {
+        margin:0 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .hero-text{
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+}
+
+/* media query for mobile devices */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
